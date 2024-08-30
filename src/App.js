@@ -117,7 +117,7 @@ function App() {
         <section className="flex flex-col mt-10 gap-1 md:flex-row md:flex-nowrap sm:flex-row sm:flex-wrap  lg:flex-row lg:flex-nowrap">
           {/* <div className="max-h-[90%] w-[38%]"> */}
             <div
-              className=" shadow-lg lg:w-[42vw] h-[92vh]  bg-white border  border-1  dark:bg-gray-600 dark:border-gray-600 flex flex-col 
+              className=" shadow-lg lg:w-[42vw] h-[92vh]  border  border-1  dark:bg-gray-600 dark:border-gray-600 flex flex-col 
                 gap-4 p-4 rounded-xl
                 border-[#00095]  hover:shadow-xl hover:dark:border-gray-900 hover:border-3
                 transition ease-out sm:w-[90vw] sm:h-[92vh] md:w-[45vw]"
@@ -154,7 +154,7 @@ function App() {
           {/* </div> */}
 
           <div
-            className=" shadow-lg lg:w-[58vw] h-[92vh]   bg-white border  border-1  dark:bg-gray-600 dark:border-gray-600 flex flex-col 
+            className=" shadow-lg lg:w-[58vw] h-[92vh]    border  border-1  dark:bg-gray-600 dark:border-gray-600 flex flex-col 
             gap-4 p-4 rounded-xl
             border-[#00095]  hover:shadow-xl hover:dark:border-gray-900 hover:border
              transition ease-out sm:w-[90vw] sm:h-[92vh] md:w-[45vw]"
@@ -234,3 +234,4 @@ function App() {
 }
 
 export default App;
+
