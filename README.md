@@ -1,7 +1,8 @@
-# Getting Started with Create React App
+# Know-Your_Image
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a react app with - gemini-flash-1.5 model. This app takes picture as a input and user can ask questions about the image and the model responses as per the queries made.
 
+Link to the project ::   (https://know-your-image.onrender.com/)
 ## Available Scripts
 
 In the project directory, you can run:
