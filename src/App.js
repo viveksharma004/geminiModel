@@ -31,7 +31,7 @@ function App() {
 
   const connecting = async () => {
     try {
-      const res = await fetch("http://localhost:8000/", {
+      const res = await fetch("https://gemini-model-server.onrender.com/", {
         method: "GET",
         headers: {
           "Content-type": "application/json",
@@ -114,13 +114,16 @@ function App() {
   return (
     <>
       <div className="app ">
-        <section className="flex flex-col mt-10 gap-1 md:flex-row md:flex-nowrap sm:flex-row sm:flex-wrap  lg:flex-row lg:flex-nowrap">
+          <div className="text-center  top-0 dark:bg-gray-600 rounded-b-md">
+          <h1 className='p-1 text-3xl font-bold text-white font-sans-serif'>Ask About Your Image</h1>
+          </div>
+        <section className="flex flex-col mt-1 gap-1 md:flex-row md:flex-nowrap sm:flex-row sm:flex-wrap  lg:flex-row lg:flex-nowrap">
           {/* <div className="max-h-[90%] w-[38%]"> */}
             <div
-              className=" shadow-lg lg:w-[42vw] h-[92vh]  border  border-1  dark:bg-gray-600 dark:border-gray-600 flex flex-col 
+              className=" shadow-lg h-[80vh] lg:w-[42vw] lg:h-[92vh]  border  border-1  dark:bg-gray-600 dark:border-gray-600 flex flex-col 
                 gap-4 p-4 rounded-xl
                 border-[#00095]  hover:shadow-xl hover:dark:border-gray-900 hover:border-3
-                transition ease-out sm:w-[90vw] sm:h-[92vh] md:w-[45vw]"
+                transition ease-out sm:w-[90vw] sm:h-[92vh] md:w-[45vw] md:h-[92vh]"
               >
               <div className="max-h-[88%] min-h-[88%]   min-w-full dark:bg-gray-500 rounded-md">
                 <img
@@ -185,7 +188,7 @@ function App() {
                       copyToClipboard(response);
                     }
                   }}
-                  className="absolute left-[95%] bottom-[4px] hover:border hover:border-1  hover:text-slate-700  hover:border-slate-700  pl-1 pr-1 rounded-xl hover:bg-slate-500"
+                  className="absolute left-[95%] bottom-[4px] hover:border hover:border-1  hover:text-slate-700  hover:border-slate-700  p-1 rounded-full hover:bg-slate-500"
                 >
                   <TbClipboardText
                     size={24}
@@ -234,4 +237,5 @@ function App() {
 }
 
 export default App;
+
 
